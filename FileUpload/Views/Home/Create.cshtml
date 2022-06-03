@@ -1,0 +1,21 @@
+﻿@model Film
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name">
+    </div>
+    <div class="form-group">
+        <label asp-for="CoverImage"></label>
+        <input asp-for="CoverImage">
+    </div>
+    <div class="form-group">
+        <label asp-for="Files"></label>
+        <input asp-for="Files">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
